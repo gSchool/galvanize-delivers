@@ -1,53 +1,22 @@
 # Galvanize Delivers
 
-In this exercise, you're tasked with creating a website for a fine dining delivery service with the following pages.
+In this exercise, you're tasked with creating a website for a fine dining delivery service with two pages—a landing page and an ordering page. To get started, fork and clone this repository.
 
-1. A landing page that describes the service.
-1. An ordering page that allows a user to:
-  - View a list of menu items.
-  - Add menu items to an order.
-  - Type their delivery information.
-  - Place the order.
+## The landing page
 
-### Getting Started
+Though you're free to style the page however you want, the page should look something like this.
 
-1. Fork and clone this repository
-1. Import [these stories](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/Q1+Assessment+Stories.csv) into Pivotal Tracker
+![index](screenshots/index_large.png)
 
-Import this [CSV]() into a new project in Pivotal Tracker to get the requirements for this story. They are sorted into two epics that roughly align with the two pages, and they are prioritized. You may find it useful to size the stories before you begin.
+More specifically, the page should allow a user to do the following.
 
-### APIs
+1. Click links to both the landing and ordering pages that are left and right aligned respectively in a fixed navbar.
+1. Read the service's tagline and click a call-to-action that's _roughly_ centered over a hero image in the header.
+1. Read the service's marketing copy in a three-column main section.
+1. Read the service's name and tagline as well as click links to both pages in a two-column footer.
+1. Read the copyright information in the footer.
 
-The project involves two API calls. The first, to get the menu data should be a GET request to this url: [https://galvanize-eats-api.herokuapp.com/menu](https://galvanize-eats-api.herokuapp.com/menu). The second request, to post an order, should be a POST request to this url: [https://galvanize-eats-api.herokuapp.com/orders](https://galvanize-eats-api.herokuapp.com/orders).
-
-Your post request should submit the user order. When you have successfully hit the POST api you will see "Congratulations!".
-
-### Notes
-
-* You can use jQuery or plain JavaScript for DOM manipulation
-* Does not have to be responsive
-* Use feature-branch workflows
-* Deploy your work
-
-### Mockups
-
-You can use these mockups as a reference.
-
-![Index Mockup](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/page_1_mock.png)
-
-![Order Mockup](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/page_2_mock.png)
-
-Here's a [wireframe](https://wireframe.cc/7JjPpp) of the ordering page.
-
-### Screenshots
-
-The finished product might look something like this:
-
-![Index Page](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/Screen+Capture+Main+Page.png)
-
-![Order Page](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/Screen+Capture+Order+Page.png)
-
-## Copy Text
+Here's the marketing copy for the landing page.
 
 > Shop Online
 >
@@ -61,6 +30,43 @@ The finished product might look something like this:
 >
 > Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
 
-## HOW TO SUBMIT YOUR ASSESSMENT
+**TIP:** The shopping, shipping, and ATM icons are [Material Icons](https://design.google.com/icons/).
 
-Add a README to your project that has a link to your deployed site and submit a pull request.
+### Bonus
+
+Tweak the landing page so it's responsive under [medium](screenshots/index_medium.png) and [small](screenshots/index_small.png) viewports.
+
+1. Ensure that the viewport's [width and initial scale](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) are appropriately set.
+1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/index_medium_sidebar.png) is displayed.
+1. Ensure the main section's marketing copy collapses into one-column on small viewports.
+1. Read the footer's name, tagline, and links collapse into one-column on small viewports.
+
+## The ordering page
+
+Though you're free to style the page however you want, the page should look something like this.
+
+![order](screenshots/order_large.png)
+
+More specifically, the ordering page should allow a user to do the following.
+
+1. View a list of menu items.
+1. Add menu items to an order.
+1. Type their delivery information.
+1. Place the order.
+
+You can use jQuery or plain JavaScript for DOM manipulation
+
+### Bonus
+
+Tweak the ordering page so it's responsive under [medium](screenshots/order_medium.png) and [small](screenshots/order_small.png) viewports.
+
+## Deployment
+
+Review the following articles on the Surge platform and then deploy your website to production.
+
+- [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
+- [Remembering a domain](http://surge.sh/help/remembering-a-domain)
+
+A good domain name for this project is `USERNAME-galvanize-delivers.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy the URL to your site and paste it below.
+
+PASTE YOUR PRODUCTION URL HERE
