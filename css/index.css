@@ -2,7 +2,8 @@ header {
   background: url(../img/hero.jpg);
   background-size: cover;
   height: 450px;
-  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 main {
@@ -13,7 +14,6 @@ h1 {
   font-size: 5rem;
   font-weight: 700;
   margin-top: 0;
-  padding-top: 150px;
   width: 100%;
 }
 
@@ -23,4 +23,8 @@ i {
 
 .brand-logo {
   margin-left: 10px;
+}
+
+.call-to-action {
+  width: 100%;
 }
