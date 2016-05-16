@@ -1,0 +1,44 @@
+/* card action a */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #e91e63;
+}
+
+/* card action a hover */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+    color: #f48fb1;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #e91e63;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #e91e63;
+  box-shadow: 0 1px 0 0 #e91e63;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #e91e63;
+}
+
+/* textarea label focus color */
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #e91e63;
+}
+
+/* textarea underline focus color */
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #e91e63;
+  box-shadow: 0 1px 0 0 #e91e63;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
+
+.addItem {
+  cursor: pointer;
+}
