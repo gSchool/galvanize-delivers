@@ -105,6 +105,7 @@
     }
 
     Materialize.toast('Order placed. Thank you!', 4000);
+    
     event.preventDefault();
   })
 })();

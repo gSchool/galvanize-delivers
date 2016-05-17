@@ -59,17 +59,17 @@ More specifically, the page should allow a user to do the following.
 Using custom JavaScript, the page should also allow a user to do the following.
 
 1. Add menu items to the receipt which updates the subtotal, tax, and total.
-1. Type their information into each **required** textfield of the delivery form.
+1. Type their information into each required textfield of the delivery form.
 1. Click the button to place the order.
-  - If any of the required text field is blank, they should see a validation message as a toast.
-  - Otherwise, they should see a success message as a toast.
+  - If any of the required textfields are blank, they should see a validation message in a toast.
+  - Otherwise, they should see a success message in a toast.
 
 ### Bonus
 
 Tweak the ordering page so it's responsive under [medium](screenshots/order_medium.png) and [small](screenshots/order_small.png) viewports.
 
 1. Ensure that the viewport's [width and initial scale](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) are appropriately set.
-1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/index_medium_sidebar.png) is displayed.
+1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/order_medium_sidebar.png) is displayed.
 1. Ensure the menu's cards collapse into one-column on medium viewports.
 1. Ensure the main section's menu and order collapse into one-column on small viewports.
 1. Read the footer's name, tagline, and links collapse into one-column on small viewports.
