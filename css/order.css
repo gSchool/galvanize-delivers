@@ -5,7 +5,7 @@
 
 /* card action a hover */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-    color: #f48fb1;
+  color: #f48fb1;
 }
 
 /* label focus color */
@@ -26,7 +26,7 @@
 
 /* textarea label focus color */
 textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #e91e63;
+  color: #e91e63;
 }
 
 /* textarea underline focus color */
@@ -37,8 +37,4 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .brand-logo {
   margin-left: 10px;
-}
-
-.addItem {
-  cursor: pointer;
 }
