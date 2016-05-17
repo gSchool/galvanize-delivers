@@ -4,16 +4,16 @@ h1 {
   margin-top: 0;
 }
 
-i {
-  vertical-align: bottom;
-}
-
 header {
   background: url(../img/hero.jpg);
   background-size: cover;
   flex-direction: column;
   height: 450px;
   justify-content: center;
+}
+
+i {
+  vertical-align: bottom;
 }
 
 main {
