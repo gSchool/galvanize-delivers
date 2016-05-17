@@ -51,8 +51,8 @@ More specifically, the page should allow a user to do the following.
 
 1. Click links to both the landing and ordering pages that are left and right aligned respectively in a fixed navbar.
 1. See that the ordering page is the active item in the navbar.
-1. See a list of menu items on the left side of _roughly_ half the page in a two-column card layout.
-1. See the order information on the right side of _roughly_ half the page with a receipt table at the top and a delivery form below.
+1. See the menu on the left side of _roughly_ half the page in a two-column card layout.
+1. See the order on the right side of _roughly_ half the page with a receipt table at the top and a delivery form below.
 1. Read the service's name and tagline as well as click links to both pages in a two-column footer.
 1. Read the copyright information in the footer.
 
