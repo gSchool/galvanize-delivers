@@ -51,8 +51,8 @@ More specifically, the page should allow a user to do the following.
 
 1. Click links to both the landing and ordering pages that are left and right aligned respectively in a fixed navbar.
 1. See that the ordering page is the active item in the navbar.
-1. See a list of menu items on the left side of _roughly_ half the page in a two-column layout of cards.
-1. See the order information on the right side of _roughly_ half the page with a receipt table at the top followed by a delivery form.
+1. See a list of menu items on the left side of _roughly_ half the page in a two-column card layout.
+1. See the order information on the right side of _roughly_ half the page with a receipt table at the top and a delivery form below.
 1. Read the service's name and tagline as well as click links to both pages in a two-column footer.
 1. Read the copyright information in the footer.
 
@@ -71,7 +71,7 @@ Tweak the ordering page so it's responsive under [medium](screenshots/order_medi
 1. Ensure that the viewport's [width and initial scale](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) are appropriately set.
 1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/index_medium_sidebar.png) is displayed.
 1. Ensure the menu's cards collapse into one-column on medium viewports.
-1. Ensure the main section's menu and receipt collapse into one-column on small viewports.
+1. Ensure the main section's menu and order collapse into one-column on small viewports.
 1. Read the footer's name, tagline, and links collapse into one-column on small viewports.
 
 ## Deployment
