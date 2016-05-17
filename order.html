@@ -36,156 +36,158 @@
       </nav>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m7">
-          <h4>Menu</h4>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m7">
+            <h4>Menu</h4>
 
-          <div class="row">
-            <div class="col s12 m12 l6">
-              <div class="card grey lighten-5">
-                <div class="card-image">
-                  <img src="img/burger.jpg" alt="burger" />
+            <div class="row">
+              <div class="col s12 m12 l6">
+                <div class="card grey lighten-5">
+                  <div class="card-image">
+                    <img src="img/burger.jpg" alt="burger" />
+                  </div>
+
+                  <div class="card-content">
+                    <span class="card-title">Royale with Cheese</span>
+                    <p>$8.99</p>
+                  </div>
+
+                  <div class="card-action">
+                    <a class="addItem">Add to order</a>
+                  </div>
                 </div>
+              </div>
 
-                <div class="card-content">
-                  <span class="card-title">Royale with Cheese</span>
-                  <p>$8.99</p>
-                </div>
+              <div class="col s12 m12 l6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/pizza.jpg" alt="burger" />
+                  </div>
 
-                <div class="card-action">
-                  <a class="addItem">Add to order</a>
+                  <div class="card-content">
+                    <span class="card-title">Arugula Pie</span>
+                    <p>$11.99</p>
+                  </div>
+
+                  <div class="card-action">
+                    <a class="addItem">Add to order</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col s12 m12 l6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/pizza.jpg" alt="burger" />
-                </div>
+            <div class="row">
+              <div class="col s12 m12 l6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/ribs.jpg" alt="burger" />
+                  </div>
 
-                <div class="card-content">
-                  <span class="card-title">Arugula Pie</span>
-                  <p>$11.99</p>
-                </div>
+                  <div class="card-content">
+                    <span class="card-title">Smoked Swine</span>
+                    <p>$14.99</p>
+                  </div>
 
-                <div class="card-action">
-                  <a class="addItem">Add to order</a>
+                  <div class="card-action">
+                    <a class="addItem">Add to order</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m12 l6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/ice_cream.jpg" alt="burger" />
+                  </div>
+
+                  <div class="card-content">
+                    <span class="card-title">Ice Cream Biscut</span>
+                    <p>$7.99</p>
+                  </div>
+
+                  <div class="card-action">
+                    <a class="addItem">Add to order</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col s12 m12 l6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ribs.jpg" alt="burger" />
-                </div>
+          <div class="col s12 m5">
+            <h4>Order</h4>
 
-                <div class="card-content">
-                  <span class="card-title">Smoked Swine</span>
-                  <p>$14.99</p>
-                </div>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th class="right-align">Price</th>
+                </tr>
+              </thead>
 
-                <div class="card-action">
-                  <a class="addItem">Add to order</a>
+              <tbody>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td class="right-align">Subtotal</td>
+                  <td class="right-align" id="subtotal"></td>
+                </tr>
+                <tr>
+                  <td class="right-align">Tax</td>
+                  <td class="right-align" id="tax"></td>
+                </tr>
+                <tr>
+                  <td class="right-align">Total</td>
+                  <td class="right-align" id="total"></td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="name" type="text">
+                  <label for="name" data-error="required">
+                    Name
+                  </label>
                 </div>
               </div>
-            </div>
 
-            <div class="col s12 m12 l6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ice_cream.jpg" alt="burger" />
-                </div>
-
-                <div class="card-content">
-                  <span class="card-title">Ice Cream Biscut</span>
-                  <p>$7.99</p>
-                </div>
-
-                <div class="card-action">
-                  <a class="addItem">Add to order</a>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="phone_number" type="text">
+                  <label for="phone_number" data-error="required">
+                    Phone number
+                  </label>
                 </div>
               </div>
-            </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">business</i>
+                  <textarea id="address" class="materialize-textarea"></textarea>
+                  <label for="address" data-error="required">
+                    Address
+                  </label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="co s12 center">
+                  <a id="placeOrder" class="waves-effect waves-light btn-large pink accent-2">
+                    Place Order
+                  </a>
+                </div>
+              </div>
+            </form>
           </div>
-        </div>
-
-        <div class="col s12 m5">
-          <h4>Order</h4>
-
-          <table class="striped">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th class="right-align">Price</th>
-              </tr>
-            </thead>
-
-            <tbody>
-            </tbody>
-
-            <tfoot>
-              <tr>
-                <td class="right-align">Subtotal</td>
-                <td class="right-align" id="subtotal"></td>
-              </tr>
-              <tr>
-                <td class="right-align">Tax</td>
-                <td class="right-align" id="tax"></td>
-              </tr>
-              <tr>
-                <td class="right-align">Total</td>
-                <td class="right-align" id="total"></td>
-              </tr>
-            </tfoot>
-          </table>
-
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="name" type="text">
-                <label for="name" data-error="required">
-                  Name
-                </label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">phone</i>
-                <input id="phone_number" type="text">
-                <label for="phone_number" data-error="required">
-                  Phone number
-                </label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">business</i>
-                <textarea id="address" class="materialize-textarea"></textarea>
-                <label for="address" data-error="required">
-                  Address
-                </label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="co s12 center">
-                <a id="placeOrder" class="waves-effect waves-light btn-large pink accent-2">
-                  Place Order
-                </a>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer class="page-footer blue darken-3">
       <div class="container">
