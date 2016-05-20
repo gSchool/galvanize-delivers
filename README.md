@@ -61,7 +61,7 @@ Using custom JavaScript, the page should also allow a user to do the following.
 1. Add menu items to the receipt which updates the subtotal, tax, and total.
 1. Type their information into each required textfield of the delivery form.
 1. Click the button to place the order.
-  - If any of the required textfields are blank, they should see a validation message in a toast.
+  - If the receipt has no menu items or any of the required textfields are blank, they should see a validation message in a toast.
   - Otherwise, they should see a success message in a toast.
 
 ### Bonus
