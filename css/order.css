@@ -1,5 +1,17 @@
 .card .card-title {
-  font-size: 22px;
+  font-size: 1.7vw;
+}
+
+@media only screen and (max-width: 992px) {
+  .card .card-title {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card .card-title {
+    font-size: 4.5vw;
+  }
 }
 
 /* card action a */
