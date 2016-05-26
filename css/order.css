@@ -1,3 +1,7 @@
+.card-title {
+  font-size: 22px;
+}
+
 /* card action a */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   color: #e91e63;
