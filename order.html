@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Galvanize Delivers</title>
+
+    <!--Import jQuery before materialize.js-->
+    <script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/order.js"></script>
+
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -11,9 +21,6 @@
 
     <!--Import order.css-->
     <link type="text/css" rel="stylesheet" href="css/order.css"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
@@ -126,8 +133,7 @@
                 </tr>
               </thead>
 
-              <tbody>
-              </tbody>
+              <tbody></tbody>
 
               <tfoot>
                 <tr>
@@ -145,7 +151,8 @@
               </tfoot>
             </table>
 
-            <form class="col s12">
+            <form>
+              <!-- Define a new row for vertical spacing of error message -->
               <div class="row">
                 <div class="input-field col s12">
                   <i class="material-icons prefix">account_circle</i>
@@ -177,7 +184,7 @@
               </div>
 
               <div class="row">
-                <div class="co s12 center">
+                <div class="col s12 center">
                   <a id="placeOrder" class="waves-effect waves-light btn-large pink accent-2">
                     Place Order
                   </a>
@@ -227,10 +234,5 @@
         </div>
       </div>
     </footer>
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/order.js"></script>
   </body>
 </html>
