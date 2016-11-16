@@ -3,24 +3,23 @@
 
   $('.button-collapse').sideNav();
 
-  var items = [];
-  var $tbody = $('tbody');
-  var $subtotal = $('#subtotal');
-  var $tax = $('#tax');
-  var $total = $('#total');
+  const items = [];
+  const $tbody = $('tbody');
+  const $subtotal = $('#subtotal');
+  const $tax = $('#tax');
+  const $total = $('#total');
 
-  var renderOrder = function() {
-    var subtotal = 0;
-    var tax;
-    var total;
-    var $tr;
-    var $tdName;
-    var $tdPrice;
-
+  const renderOrder = function() {
+    let subtotal = 0;
+    let tax;
+    let total;
+    let $tr;
+    let $tdName;
+    let $tdPrice;
 
     $tbody.empty();
 
-    for (var item of items) {
+    for (const item of items) {
       $tr = $('<tr>');
       $tdName = $('<td>');
       $tdPrice = $('<td>');
@@ -46,10 +45,10 @@
 
   renderOrder();
 
-  $('.addItem').on('click', function(event) {
-    var item = {};
-    var $target = $(event.target);
-    var $cardContent = $target.parent().siblings('.card-content');
+  $('.addItem').on('click', (event) => {
+    const item = {};
+    const $target = $(event.target);
+    const $cardContent = $target.parent().siblings('.card-content');
 
     item.name = $cardContent.children('.card-title').text();
     item.price = parseFloat($cardContent.children('p').text().slice(1));
@@ -61,9 +60,9 @@
     event.preventDefault();
   });
 
-  $('#name, #phone_number, #address').on('blur', function(event) {
-    var $target = $(event.target);
-    var value = $target.val();
+  $('#name, #phone_number, #address').on('blur', (event) => {
+    const $target = $(event.target);
+    const value = $target.val();
 
     if (value.length === 0) {
       $target.removeClass('valid');
@@ -79,15 +78,15 @@
     }
   });
 
-  $('#placeOrder').on('click', function(event) {
+  $('#placeOrder').on('click', (event) => {
     if (items.length === 0) {
       Materialize.toast('Please add an item to your order.', 4000);
       return;
     }
 
-    var $name = $('#name');
-    var $phoneNumber = $('#phone_number');
-    var $address = $('#address');
+    const $name = $('#name');
+    const $phoneNumber = $('#phone_number');
+    const $address = $('#address');
 
     if ($name.val().trim() === '') {
       Materialize.toast('Please type a name.', 4000);
@@ -105,7 +104,7 @@
     }
 
     Materialize.toast('Order placed. Thank you!', 4000);
-    
+
     event.preventDefault();
   })
 })();
