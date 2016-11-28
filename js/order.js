@@ -11,18 +11,13 @@
 
   const renderOrder = function() {
     let subtotal = 0;
-    let tax;
-    let total;
-    let $tr;
-    let $tdName;
-    let $tdPrice;
 
     $tbody.empty();
 
     for (const item of items) {
-      $tr = $('<tr>');
-      $tdName = $('<td>');
-      $tdPrice = $('<td>');
+      const $tr = $('<tr>');
+      const $tdName = $('<td>');
+      const $tdPrice = $('<td>');
 
       $tdName.text(item.name);
       $tdPrice.text(`$${item.price.toFixed(2)}`);
@@ -35,8 +30,8 @@
       subtotal += item.price;
     }
 
-    tax = subtotal * 0.1;
-    total = subtotal + tax;
+    const tax = subtotal * 0.1;
+    const total = subtotal + tax;
 
     $subtotal.text(`$${subtotal.toFixed(2)}`)
     $tax.text(`$${tax.toFixed(2)}`)
@@ -46,6 +41,8 @@
   renderOrder();
 
   $('.addItem').on('click', (event) => {
+    event.preventDefault();
+
     const item = {};
     const $target = $(event.target);
     const $cardContent = $target.parent().siblings('.card-content');
@@ -56,8 +53,6 @@
     items.push(item);
 
     renderOrder();
-
-    event.preventDefault();
   });
 
   $('#name, #phone_number, #address').on('blur', (event) => {
@@ -79,6 +74,8 @@
   });
 
   $('#placeOrder').on('click', (event) => {
+    event.preventDefault();
+
     if (items.length === 0) {
       Materialize.toast('Please add an item to your order.', 4000);
       return;
@@ -104,7 +101,5 @@
     }
 
     Materialize.toast('Order placed. Thank you!', 4000);
-
-    event.preventDefault();
   })
 })();
