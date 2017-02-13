@@ -55,9 +55,9 @@ Using custom JavaScript, the page should also allow a user to do the following.
   - If the receipt has no menu items or any of the textfields are blank, they should see a validation message in a toast.
   - Otherwise, they should see a success message in a toast.
 
-### Bonus
+## Responsive Design
 
-Tweak the ordering page so it's responsive under [medium](screenshots/order_medium.png) and [small](screenshots/order_small.png) viewports.
+Make the ordering page so it's responsive under [medium](screenshots/order_medium.png) and [small](screenshots/order_small.png) viewports.
 
 1. Ensure that the viewport's [width and initial scale](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) are appropriately set.
 1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/order_medium_sidebar.png) is displayed.
