@@ -32,15 +32,6 @@ Here's the marketing copy for the landing page.
 
 **TIP:** The shopping, shipping, and ATM icons are [Material Icons](https://design.google.com/icons/).
 
-### Bonus
-
-Tweak the landing page so it's responsive under [medium](screenshots/index_medium.png) and [small](screenshots/index_small.png) viewports.
-
-1. Ensure that the viewport's [width and initial scale](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag) are appropriately set.
-1. Ensure that right aligned link in the navbar collapses into a hamburger icon on medium viewports. When the hamburger icon is clicked, a [sidebar with the link](screenshots/index_medium_sidebar.png) is displayed.
-1. Ensure the main section's marketing copy collapses into one-column on small viewports.
-1. Read the footer's name, tagline, and links collapse into one-column on small viewports.
-
 ## The ordering page
 
 Though you're free to style the page however you want, the page should look something like this.
